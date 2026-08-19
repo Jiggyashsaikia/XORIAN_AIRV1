@@ -1,11 +1,28 @@
 import type {
   BlogPost,
+  EditorialPhoto,
   EquipmentItem,
   Industry,
   Project,
   Service,
   SiteStat,
 } from '@/types';
+
+export const heroPhoto: EditorialPhoto = {
+  src: 'https://images.unsplash.com/photo-1771476472944-6097ec028405?auto=format&fit=crop&fm=webp&q=80&w=1800',
+  alt: 'Aerial view of an active construction site captured from above.',
+  sourceUrl: 'https://unsplash.com/photos/aerial-view-of-a-construction-site-with-clouds-below-sOG8qVJW7VE',
+  photographer: 'Yusuf Onuk',
+  license: 'Unsplash License',
+};
+
+export const equipmentFeaturePhoto: EditorialPhoto = {
+  src: 'https://images.unsplash.com/photo-1724337227697-bf212dc0aad8?auto=format&fit=crop&fm=webp&q=80&w=1400',
+  alt: 'Professional drone flying above a monitored construction materials site.',
+  sourceUrl: 'https://unsplash.com/photos/a-large-pile-of-dirt-next-to-a-green-machine-kyJIDzkpzJI',
+  photographer: 'Josh Ogden',
+  license: 'Unsplash License',
+};
 
 export const siteStats: SiteStat[] = [
   { label: 'What We Deliver', value: '01' },
@@ -126,6 +143,13 @@ export const projects: Project[] = [
     gallery: ['Aerial site overview', 'Processed orthomosaic output', 'Annotated site map', 'Deliverable package summary'],
     beforeLabel: 'Raw aerial capture',
     afterLabel: 'Processed mapping deliverables',
+    illustration: {
+      src: 'https://images.unsplash.com/photo-1771476472944-6097ec028405?auto=format&fit=crop&fm=webp&q=80&w=1400',
+      alt: 'Illustrative aerial view of an active construction site with roads and earthworks.',
+      sourceUrl: 'https://unsplash.com/photos/aerial-view-of-a-construction-site-with-clouds-below-sOG8qVJW7VE',
+      photographer: 'Yusuf Onuk',
+      license: 'Unsplash License',
+    },
     pin: { left: '32%', top: '54%' },
   },
   {
@@ -148,6 +172,13 @@ export const projects: Project[] = [
     gallery: ['Orthomosaic tile set', 'Measurement overlay', 'Markup-ready PDF export', 'Processed image grid'],
     beforeLabel: 'Individual aerial images',
     afterLabel: 'Usable mapped output',
+    illustration: {
+      src: 'https://images.unsplash.com/photo-1706633963693-7569e5d13f5c?auto=format&fit=crop&fm=webp&q=80&w=1400',
+      alt: 'Illustrative aerial top-down view of road construction machinery and material handling.',
+      sourceUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-construction-site-with-machinery-JzJ3_PbPLbg',
+      photographer: 'Tom Shamberger',
+      license: 'Unsplash License',
+    },
     pin: { left: '54%', top: '38%' },
   },
   {
@@ -170,6 +201,13 @@ export const projects: Project[] = [
     gallery: ['3D site model view', 'Surface visualization', 'Presentation snapshot set', 'Output handoff package'],
     beforeLabel: 'Unprocessed visual data',
     afterLabel: 'Structured 3D outputs',
+    illustration: {
+      src: 'https://images.unsplash.com/photo-1630254428244-ac29b798067f?auto=format&fit=crop&fm=webp&q=80&w=1400',
+      alt: 'Illustrative aerial view of a development site photographed from directly above.',
+      sourceUrl: 'https://unsplash.com/photos/an-aerial-view-of-a-building-under-construction-fIw91B4ZkcE',
+      photographer: 'adriaan venner scheepers',
+      license: 'Unsplash License',
+    },
     pin: { left: '44%', top: '66%' },
   },
 ];
@@ -198,6 +236,7 @@ export const equipment: EquipmentItem[] = [
     range: '20 km video transmission',
     payload: '2.7 kg',
     sampleDataset: 'Utility corridor mission set',
+    illustration: equipmentFeaturePhoto,
   },
   {
     name: 'Zenmuse L2',

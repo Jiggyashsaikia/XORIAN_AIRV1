@@ -21,6 +21,17 @@ export default function EquipmentPage() {
         <div className="equipment-grid">
           {equipment.map((item) => (
             <article className="equipment-card" key={item.name}>
+              {item.illustration ? (
+                <div className="equipment-media">
+                  <img
+                    alt={item.illustration.alt}
+                    className="equipment-photo"
+                    loading="lazy"
+                    src={item.illustration.src}
+                  />
+                  <span className="photo-note">Illustrative photography</span>
+                </div>
+              ) : null}
               <p className="card-kicker">{item.category}</p>
               <h3>{item.name}</h3>
               <p>Accuracy: {item.accuracy}</p>

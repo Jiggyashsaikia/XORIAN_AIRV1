@@ -23,7 +23,14 @@ export default function ProjectsPage() {
           {projects.map((project) => (
             <article className="project-gallery-card" key={project.slug}>
               <div className="project-hero">
+                <img
+                  alt={project.illustration.alt}
+                  className="project-photo"
+                  loading="lazy"
+                  src={project.illustration.src}
+                />
                 <div className="project-hero-inner">
+                  <span className="photo-note">Illustrative photography</span>
                   <p className="card-kicker">{project.clientIndustry}</p>
                   <h3>{project.name}</h3>
                   <p>{project.location}</p>

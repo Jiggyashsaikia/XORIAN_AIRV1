@@ -37,7 +37,13 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       <main className="page shell">
         <section className="project-summary">
           <div className="project-hero">
+            <img
+              alt={project.illustration.alt}
+              className="project-photo"
+              src={project.illustration.src}
+            />
             <div className="project-hero-inner">
+              <span className="photo-note">Illustrative photography</span>
               <p className="card-kicker">Output Context</p>
               <h3>{project.location}</h3>
               <p>Use Case: {project.surveyArea}</p>

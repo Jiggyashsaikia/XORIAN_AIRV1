@@ -12,6 +12,14 @@ export interface Service {
   estimatedTurnaround: string;
 }
 
+export interface EditorialPhoto {
+  src: string;
+  alt: string;
+  sourceUrl: string;
+  photographer: string;
+  license: string;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -27,6 +35,7 @@ export interface Project {
   gallery: string[];
   beforeLabel: string;
   afterLabel: string;
+  illustration: EditorialPhoto;
   pin: {
     left: string;
     top: string;
@@ -50,6 +59,7 @@ export interface EquipmentItem {
   range: string;
   payload: string;
   sampleDataset: string;
+  illustration?: EditorialPhoto;
 }
 
 export interface BlogPost {

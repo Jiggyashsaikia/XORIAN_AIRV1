@@ -1,13 +1,21 @@
 import Link from 'next/link';
 import { Footer } from '@/components/site-chrome';
 import { FadeIn } from '@/components/reveal';
-import { blogPosts, industries, projects, services, siteStats } from '@/lib/site-data';
+import { blogPosts, heroPhoto, industries, projects, services, siteStats } from '@/lib/site-data';
 
 export default function Home() {
   return (
     <>
       <main>
         <section className="hero-panel">
+          <img
+            alt=""
+            aria-hidden="true"
+            className="hero-photo"
+            decoding="async"
+            fetchPriority="high"
+            src={heroPhoto.src}
+          />
           <div className="hero-mesh" />
           <div className="hero-grid" />
           <div className="hero-content shell">
