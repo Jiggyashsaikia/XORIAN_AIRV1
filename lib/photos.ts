@@ -1,0 +1,9 @@
+import type { Photo } from '@/types';
+export const photos:Photo[]=[
+{id:'alpine',title:'Alpine Silence',category:'Landscape',location:'Dolomites, Italy',camera:'Leica M11',lens:'Summilux 35mm',settings:'f/4 · 1/500 · ISO 100',src:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85'},
+{id:'monolith',title:'Monolith',category:'Architecture',location:'Copenhagen, Denmark',camera:'Sony A1',lens:'16–35mm GM',settings:'f/8 · 1/250 · ISO 100',src:'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1200&q=85'},
+{id:'road',title:'Red Line',category:'Automotive',location:'Tuscany, Italy',camera:'Sony A1',lens:'50mm GM',settings:'f/2 · 1/1000 · ISO 100',src:'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85'},
+{id:'coast',title:'Coastline',category:'Drone',location:'Algarve, Portugal',camera:'DJI Mavic 3',lens:'24mm',settings:'f/5.6 · 1/1000 · ISO 100',src:'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1300&q=85'},
+{id:'portrait',title:'Quietly Wild',category:'Portraits',location:'Reykjavík, Iceland',camera:'Leica SL2',lens:'75mm Summicron',settings:'f/2 · 1/320 · ISO 200',src:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85'},
+{id:'desert',title:'The Long Way',category:'Travel',location:'Wadi Rum, Jordan',camera:'Leica M11',lens:'28mm Summilux',settings:'f/5.6 · 1/500 · ISO 100',src:'https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85'},
+{id:'night',title:'After Hours',category:'Night',location:'Tokyo, Japan',camera:'Sony A7R V',lens:'35mm GM',settings:'f/1.4 · 1/80 · ISO 800',src:'https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1200&q=85'}];
